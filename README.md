@@ -1,4 +1,4 @@
-project_name
+octopus_paul_bot
 ==============================
 
 a bot that analyzes a time series of assets and returns the action on the day and inserts the result into the database
