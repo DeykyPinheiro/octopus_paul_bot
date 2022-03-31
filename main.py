@@ -1,5 +1,5 @@
 from src.telegramBot import TelegramBot
-from src.driveBot import DriveBot
+from src.data.driveBot import DriveBot
 from dotenv import dotenv_values
 import pandas as pd
 import numpy as np
