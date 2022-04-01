@@ -2,8 +2,6 @@ import io
 import requests
 import numpy as np
 import pandas as pd
-from dateutil.relativedelta import relativedelta
-import datetime
 from src.data.driveBot import DriveBot
 from src.visualization.visualize import plot_dataframe
 
