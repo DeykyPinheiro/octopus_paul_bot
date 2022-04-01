@@ -5,10 +5,14 @@ import pandas as pd
 import numpy as np
 import os
 
+load_dotenv()
 
-KEYS = dotenv_values(".env")
-TOKEN = KEYS["API_KEY"]
-telegram_bot = TelegramBot(TOKEN=TOKEN)
+
+# KEYS = dotenv_values(".env")
+# TOKEN = KEYS["API_KEY"]
+
+TOKEN = os.getenv("API_KEY")
+telegram_bot = TelegramBot(TOKEN)
 telegram_bot.start()
 
 # end = pd.to_datetime("today") - np.timedelta64(1, "D")
