@@ -43,10 +43,10 @@ class TelegramBot:
 		if message_text in ["oi", "ola", "eae", "eai"]:
 			return ("ola querido usuario")
 		elif message_text in ["df"]:
-			df = self.drive_bot.get_data("BBDC4.SA", self.start_ts, self.end_ts)
+			df = self.drive_bot.get_data("BTC-USD", self.start_ts, self.end_ts)
 			return df.head(10)
-		elif message_text in ["grafico"]: # preciso subir um grafico
-			df = self.drive_bot.get_data("BBDC4.SA", self.start_ts, self.end_ts)
+		elif message_text in ["grafico"]:
+			df = self.drive_bot.get_data("BTC-USD", self.start_ts, self.end_ts)
 			return plot_dataframe(df)
 		else:
 			return ("não entendi, use uma resposta valida")
